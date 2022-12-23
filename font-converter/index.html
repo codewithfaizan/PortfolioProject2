@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Font Converter</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Berkshire+Swash&family=Comfortaa&family=DM+Serif+Display&family=Roboto+Mono&display=swap");
+</style>
+  <body>
+    <div class="container">
+      <h1 class="header">FONT CONVERTER</h1>
+<hr>
+      <div class="center">
+
+      
+      <form onsubmit="changeFont(event)" class="form">
+        <label for="textbox"><h3>Enter the Text:</h3></label><br />
+        <textarea
+          id="textinput"
+          rows="4"
+          cols="50">
+        </textarea
+        ><br />
+        <div class="below">
+        <label for="cars">Choose a Font Family:</label>
+
+        <select name="fonts" id="fonts">
+          <option value="unsteady-oversteer"">Unsteady Oversteer</option>
+          <option value="'Aboreto', cursive">Aboreto</option>
+          <option value="'Berkshire Swash', cursive">Berkshire Swash</option>
+          <option value="'Comfortaa', cursive">Comfortaa</option>
+          <option value="'DM Serif Display', serif">DM Serif Mono</option>
+          <option value="'Roboto Mono', monospace">Roboto Mono</option>
+        </select>
+        </div>
+        <br/>
+        <input type="submit" value="submit" />
+      </form>
+    
+      <br />
+      <div class="form2">
+      <textarea name="newtext" id="newtext" cols="50" rows="5" readonly></textarea>
+      </div>
+  </div>
+</div>
+    <footer>
+      <a href="http://codeforindia.com" target="_blank">Code For India</a><br />
+      &copy Copyrights. All Rights Reserved
+      <!-- <script>
+            document.write(new Date().getFullYear());
+        </script> -->
+      <span id="date"></span>
+    </footer>
+  </body>
+  <script>
+    document.getElementById("date").innerText = new Date().getFullYear();
+    function changeFont(event) {
+      event.preventDefault();
+      
+      let text = document.getElementById("textinput").value;
+      console.log(text);
+
+      let fontname = document.getElementById("fonts").value;
+      console.log(fontname);
+
+      let formattedText = document.getElementById("newtext");
+      formattedText.innerText = text;
+      formattedText.style.fontFamily = fontname;
+    }
+  </script>
+</html>

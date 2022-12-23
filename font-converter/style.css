@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: beige;
+    text-align: center;
+    font-size: medium;
+    height:500px;
+
+}
+.container {
+  padding: 10px ;
+  margin: auto;
+  justify-content: center;
+  width:fit-content;
+  border:10px;
+  border-color:black solid;
+  border-radius: 10px;
+  box-shadow: 0 0 50px #ccc;
+  
+}
+.header {
+    color:white;
+    justify-content: center;
+    border:2px black solid;
+    /* text-align: center; */
+    /* align-items: center; */
+  /* background-color: black; */
+  /* border-width: 0 8px 8px 2px; */
+  /* border-color: black; */
+  /* border:10px black solid; */
+  
+  padding:10px;
+  /* text-shadow: 2px 1px 0px #f8e9e9; */
+  /* box-shadow: 10px 10px 240px 180px #0ff; */
+  width: 500px;
+  height: 60px;
+  background-color: #fff;
+  border: solid 2px #fff;
+  box-shadow:
+    inset 60px 0 120px rgb(53, 45, 53),
+    inset -60px 0 120px #0ff;
+    
+}
+h1.header{
+    border:5px solid black;
+
+}
+
+
+form{
+    align-items: center;
+    margin:auto;
+    padding:10rem;
+    /* border:black solid; */
+}
+.center {
+    align-items: center;
+    text-align: center;
+    height:350px;
+    width:500px;
+    justify-content: center;
+    background-color: #bbbbaa;
+    -moz-box-shadow: 5px 5px 5px 5px #777777; 
+-webkit-box-shadow: 5px 5px 5px 5px #777777; 
+box-shadow: 5px 5px 5px 5px #777777;
+    
+}
+#textinput{
+    max-width: 400px;
+    max-height: 70px;
+}
+
+.form{
+    margin:10px;
+    margin: 0 auto 10px auto; 
+    justify-content: center;
+
+    /* border-color: black; */
+    /* border-width: 0 8px 8px 2px; */
+    padding:10px;
+}
+
+input[type=submit]{
+    margin:5px 0 5px 0;
+    border-radius: 3px;
+    text-transform: uppercase;
+    background-color:#0a0a23;
+    color: #fff;
+    /* border:none;  */
+    border-radius:10px; 
+    padding:10px;
+    min-height:20px; 
+    min-width: 120px;
+}
+
+.below#font{
+    color:black;
+    background-color: azure;
+}
+
+input[type=submit]:hover{
+    color:brown;
+}
+label {
+    /* padding:2px; */
+}
+
+.form2{
+    border-radius: 2px;
+    margin:-20px;
+    padding: 0 10px 0 10px;
+}
+
+#newtext{
+    max-width: 400px;
+    max-height: 70px;
+}
+
+@media only screen and (max-width:600px){
+    body{
+        width:900px;
+        height: 90px;
+        padding:5px;
+        margin:auto;
+    }
+}
